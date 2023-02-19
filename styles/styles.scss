@@ -8,7 +8,7 @@
     --content-padding: 0 12em;
 }
 
-.prevent-select, h1, h2, h3, h4, h5, h6, p, li {
+.prevent-select, h1, h2, h3, h4, h5, h6, p, li, img {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -19,6 +19,11 @@
 
 img {
     pointer-events: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
 }
 
 html, body {
