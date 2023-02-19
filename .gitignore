@@ -1,3 +1,10 @@
 style.css
 
 design-assets
+original-assets
+
+node_modules
+
+dist
+
+.parcel-cache

@@ -7,6 +7,14 @@
   --content-padding: 0 12em;
 }
 
+.prevent-select, h1, h2, h3, h4, h5, h6, p, li {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 html, body {
   margin: 0;
   letter-spacing: 2px;
@@ -83,6 +91,11 @@ section {
   color: var(--primary);
 }
 
+nav {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 nav .container-fluid .navbar-brand {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,6 +132,13 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
   color: white;
 }
 
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.95);
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* HERO SECTION */
 .hero-section .hero-inner {
   position: absolute;
   z-index: 12;
@@ -161,6 +181,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
      object-fit: cover;
 }
 
+/* FEATURED SECTION */
 .featured-section {
   padding: 0;
   padding-top: 8%;
@@ -208,6 +229,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
   min-height: 2.5px;
 }
 
+/* WHO WE ARE SECTION */
 .who-we-are-section {
   padding: 0;
   padding-top: 8%;
@@ -445,6 +467,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
   font-weight: 600;
 }
 
+/* CONTACT US SECTION */
 .contact-us-section {
   margin-top: 115px;
   margin-bottom: 200px;
@@ -509,6 +532,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
   height: 500px;
 }
 
+/* FOOTER SECTION */
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
