@@ -17,6 +17,10 @@
     user-select: none;
 }
 
+img {
+    pointer-events: none;
+}
+
 html, body {
     margin: 0;
     letter-spacing: 2px;
