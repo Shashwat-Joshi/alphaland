@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+:root {
+  --primary: #F76B0A;
+  --secondary: #19CEDA;
+  --grey: #676767;
+  --max-width: 1300px;
+  --content-padding: 0 12em;
+}
+
+.prevent-select, h1, h2, h3, h4, h5, h6, p, li, img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+html, body {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+body {
+  color: white;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav .container-fluid .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+nav .container-fluid .navbar-brand span {
+  color: var(--primary);
+}
+
+nav .container-fluid .navbar-brand img {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+
+nav .container-fluid .collapse > .navbar-nav > .nav-item {
+  padding-left: 40px;
+  font-size: 1.1em;
+}
+
+nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
+  color: white;
+}
+
+.diets-landing {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/diets-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+}
+
+.diets-landing .diets-inner {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.diets-landing .diets-inner .diets-content {
+  width: 55%;
+}
+
+.diets-landing .diets-inner .diets-content h6 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.diets-landing .diets-inner .diets-content h1 {
+  margin: 0;
+  margin-top: 8%;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.diets-landing .diets-inner .diets-content h1 span {
+  color: var(--primary);
+}
+
+.diets-landing .diets-inner .diets-content p {
+  width: 70%;
+  margin-top: 8%;
+  font-size: 17px;
+}
+
+.diets-landing .diets-inner .diets-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  width: 40vh;
+  max-width: 300px;
+  max-height: 600px;
+}
+
+.diets-landing .diets-inner .diets-cards h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.diets-landing .diets-inner .diets-cards .diets-card, .diets-landing .diets-inner .diets-cards .supplements-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.diets-landing .diets-inner .diets-cards .diets-card h2, .diets-landing .diets-inner .diets-cards .supplements-card h2 {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: white;
+}
+
+.diets-landing .diets-inner .diets-cards .diets-card:hover, .diets-landing .diets-inner .diets-cards .supplements-card:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  scale: 1.05;
+}
+
+.diets-landing .diets-inner .diets-cards .diets-card:hover h2, .diets-landing .diets-inner .diets-cards .supplements-card:hover h2 {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: var(--primary);
+}
+
+.diets-landing .diets-inner .diets-cards .diets-card {
+  margin-bottom: 40px;
+  background-image: url("../assets/diets-card-bg.png");
+}
+
+.diets-landing .diets-inner .diets-cards .supplements-card {
+  margin-top: 40px;
+  background-image: url("../assets/supplements-card-bg.png");
+}
+/*# sourceMappingURL=diets.css.map */
