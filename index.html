@@ -248,9 +248,6 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      var imgs = document.getElementsByTagName("img");
-      for (var img in imgs) img.setAttribute("draggable", false);
-
       const navEle = document.querySelector(".navbar");
       window.addEventListener("scroll", () => {
         if (window.scrollY >= 56) {
@@ -259,6 +256,10 @@
           navEle.classList.remove("scrolled");
         }
       });
+    </script>
+    <script>
+      var imgs = document.getElementsByTagName("img");
+      for (var img in imgs) img.setAttribute("draggable", false);
     </script>
   </body>
 </html>
