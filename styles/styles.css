@@ -237,7 +237,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
      object-fit: contain;
 }
 
-.featured-section .section-content button {
+.featured-section .section-content a {
   margin-top: 50px;
 }
 

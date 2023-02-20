@@ -110,7 +110,7 @@ nav {
             max-width: 300px;
             max-height: 600px;
             h2 {
-                font-size: 30px;
+                font-size: 25px;
                 font-weight: bold;
             }
             .diets-card, .supplements-card {
@@ -134,6 +134,7 @@ nav {
                 transition: all 0.5s;
                 scale: 1.05;
                 h2 {
+                    scale: 1.05;
                     transition: all 0.5s;
                     color: var(--primary);
                 }

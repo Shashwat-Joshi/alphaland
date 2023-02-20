@@ -139,7 +139,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
 }
 
 .diets-landing .diets-inner .diets-cards h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -177,6 +177,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
 }
 
 .diets-landing .diets-inner .diets-cards .diets-card:hover h2, .diets-landing .diets-inner .diets-cards .supplements-card:hover h2 {
+  scale: 1.05;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: var(--primary);
