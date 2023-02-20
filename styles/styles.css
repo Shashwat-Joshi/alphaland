@@ -75,6 +75,18 @@ body {
   margin-left: 20px;
 }
 
+.btn {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  scale: 1.0;
+}
+
+.btn:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  scale: 1.05;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
