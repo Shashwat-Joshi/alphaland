@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #F76B0A;
+    --secondary: #19CEDA;
+    --grey: #676767;
+    --max-width: 1300px;
+    --content-padding: 0 12em;
+}
+
+.prevent-select, h1, h2, h3, h4, h5, h6, p, li, img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+html, body {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.diets-goal-section {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    a {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: calc(100% / 3);
+        .cut-option, .maintain-option, .bulk-option {
+            cursor: pointer;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            div {
+                height: 100%;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                transition: all .5s;
+            }
+            .cut-bg {
+                background-image: url("../assets/cut-option-bg.png");
+            }
+            .maintain-bg {
+                background-image: url("../assets/maintain-option-bg.png");
+            }
+            .bulk-bg {
+                background-image: url("../assets/bulk-option-bg.png");
+            }
+            h2 {
+                transition: all .5s;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                letter-spacing: 15px;
+                font-size: xx-large;
+                font-weight: 600;
+            }
+        }
+    
+        div:hover,
+        div:focus {
+            div {
+                transform: scale(1.1);
+            }
+            h2 {
+                letter-spacing: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+:root {
+  --primary: #F76B0A;
+  --secondary: #19CEDA;
+  --grey: #676767;
+  --max-width: 1300px;
+  --content-padding: 0 12em;
+}
+
+.prevent-select, h1, h2, h3, h4, h5, h6, p, li, img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+html, body {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+body {
+  color: white;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.diets-goal-section {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.diets-goal-section a {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: calc(100% / 3);
+}
+
+.diets-goal-section a .cut-option, .diets-goal-section a .maintain-option, .diets-goal-section a .bulk-option {
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.diets-goal-section a .cut-option div, .diets-goal-section a .maintain-option div, .diets-goal-section a .bulk-option div {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.diets-goal-section a .cut-option .cut-bg, .diets-goal-section a .maintain-option .cut-bg, .diets-goal-section a .bulk-option .cut-bg {
+  background-image: url("../assets/cut-option-bg.png");
+}
+
+.diets-goal-section a .cut-option .maintain-bg, .diets-goal-section a .maintain-option .maintain-bg, .diets-goal-section a .bulk-option .maintain-bg {
+  background-image: url("../assets/maintain-option-bg.png");
+}
+
+.diets-goal-section a .cut-option .bulk-bg, .diets-goal-section a .maintain-option .bulk-bg, .diets-goal-section a .bulk-option .bulk-bg {
+  background-image: url("../assets/bulk-option-bg.png");
+}
+
+.diets-goal-section a .cut-option h2, .diets-goal-section a .maintain-option h2, .diets-goal-section a .bulk-option h2 {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 15px;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.diets-goal-section a div:hover div,
+.diets-goal-section a div:focus div {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.diets-goal-section a div:hover h2,
+.diets-goal-section a div:focus h2 {
+  letter-spacing: 20px;
+}
+/*# sourceMappingURL=diets-goal.css.map */

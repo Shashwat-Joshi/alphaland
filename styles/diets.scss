@@ -102,50 +102,55 @@ nav {
                 font-size: 17px;
             }
         }
-        .diets-cards {
+        .diets-cards  {
             display: flex;
             flex-direction: column;
-            height: 80vh;
+            height: 70vh;
             width: 40vh;
             max-width: 300px;
-            max-height: 600px;
+            max-height: 550px;
             h2 {
                 font-size: 25px;
                 font-weight: bold;
             }
-            .diets-card, .supplements-card {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            a {
+                text-decoration: none;
                 height: 100%;
                 width: 100%;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: 0;
-                text-align: center;
-                transition: all 0.5s;
-                h2 {
+                .diets-card, .supplements-card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 0;
+                    text-align: center;
                     transition: all 0.5s;
-                    color: white;
+                    h2 {
+                        transition: all 0.5s;
+                        color: white;
+                    }
+                    cursor: pointer;
                 }
-                cursor: pointer;
-            }
-            .diets-card:hover, .supplements-card:hover {
-                transition: all 0.5s;
-                scale: 1.05;
-                h2 {
+                .diets-card:hover, .supplements-card:hover {
+                    transition: all 0.5s;
                     scale: 1.05;
-                    transition: all 0.5s;
-                    color: var(--primary);
+                    h2 {
+                        scale: 1.05;
+                        transition: all 0.5s;
+                        color: var(--primary);
+                    }
                 }
-            }
-            .diets-card {
-                margin-bottom: 40px;
-                background-image: url("../assets/diets-card-bg.png");
-            }
-            .supplements-card {
-                margin-top: 40px;
-                background-image: url("../assets/supplements-card-bg.png");
+                .diets-card {
+                    margin-bottom: 40px;
+                    background-image: url("../assets/diets-card-bg.png");
+                }
+                .supplements-card {
+                    margin-top: 40px;
+                    background-image: url("../assets/supplements-card-bg.png");
+                }
             }
         }
     }
