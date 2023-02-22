@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #F76B0A;
+    --secondary: #19CEDA;
+    --grey: #676767;
+    --max-width: 1300px;
+    --content-padding: 0 12em;
+}
+
+.prevent-select, h1, h2, h3, h4, h5, h6, p, li, img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+body {
+    color: white;
+    background-color: #0A0A0A;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    transition: all 0.5s;
+    .container-fluid {
+        .navbar-brand {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            font-size: 25px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            span {
+                color: var(--primary);
+            }
+            img {
+                height: 3.5rem;
+                width: 3.5rem;
+                margin-right: 10px;
+                margin-left: 25px;
+            }
+        }
+        .collapse > .navbar-nav > .nav-item {
+            padding-left: 40px;
+            font-size: 1.1em;
+            .nav-link:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 60%;
+        max-height: 420px;
+        padding-left: 40px;
+        width: 45%;
+        div {
+            h1 {
+                font-weight: bold;
+                font-size: 40px;
+                letter-spacing: 15px;
+            }
+            hr {
+                width: 200px;
+                border: none;
+                height: 2.5px;
+                background-color: var(--primary);
+            }
+        }
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            span {
+                color: var(--primary);
+            }
+        }
+        p {
+            width: 80%;
+        }
+    }
+    .hero-image {
+        height: 100%;
+        width: 50%;
+        max-width: 700px;
+        background-image: url("../../assets/cut-hero.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.calorie-deficit-section {
+    width: 100%;
+    padding-top: 100px;
+    h2 {
+        font-weight: 600;
+        font-size: 30px;
+        span {
+            color: var(--primary);
+        }
+    }
+    p {
+        margin-top: 50px;
+        width: 70%;
+    }
+
+    .cutting-moto {
+        margin-top: 80px;
+        background-color: #131313;
+        width: 100%;
+        border-left: solid 3px var(--primary);
+        padding: 30px 50px;
+        padding-top: 35px;
+        h3 {
+            font-size: 25px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        p {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+}
+
+.roadmap-section {
+    width: 100%;
+    padding-top: 80px;
+    h2 {
+        span {
+            color: var(--primary);
+        }
+    }
+    .py-5 {
+        padding-right: 150px;
+        padding-left: 15px;
+
+        .timeline-with-icons {
+            border-left: 1px solid var(--primary);
+            position: relative;
+            list-style: none;
+            .timeline-item {
+                .timeline-icon {
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+            }
+          }
+          
+          .timeline-with-icons .timeline-item {
+            position: relative;
+          }
+          
+          .timeline-with-icons .timeline-item:after {
+            position: absolute;
+            display: block;
+            top: 0;
+          }
+          
+          .timeline-with-icons .timeline-icon {
+            position: absolute;
+            left: -48px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            height: 31px;
+            width: 31px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+    }
+}
+
+.diets-section {
+    width: 100%;
+    h2 {
+        span {
+            color: var(--primary);
+        }
+    }
+}

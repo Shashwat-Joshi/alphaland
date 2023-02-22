@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+:root {
+  --primary: #F76B0A;
+  --secondary: #19CEDA;
+  --grey: #676767;
+  --max-width: 1300px;
+  --content-padding: 0 12em;
+}
+
+.prevent-select, h1, h2, h3, h4, h5, h6, p, li, img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+body {
+  color: white;
+  background-color: #0A0A0A;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+nav .container-fluid .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+nav .container-fluid .navbar-brand span {
+  color: var(--primary);
+}
+
+nav .container-fluid .navbar-brand img {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+
+nav .container-fluid .collapse > .navbar-nav > .nav-item {
+  padding-left: 40px;
+  font-size: 1.1em;
+}
+
+nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
+  color: white;
+}
+
+.scrolled {
+  background-color: black;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-section .hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 60%;
+  max-height: 420px;
+  padding-left: 40px;
+  width: 45%;
+}
+
+.hero-section .hero-content div h1 {
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 15px;
+}
+
+.hero-section .hero-content div hr {
+  width: 200px;
+  border: none;
+  height: 2.5px;
+  background-color: var(--primary);
+}
+
+.hero-section .hero-content h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.hero-section .hero-content h2 span {
+  color: var(--primary);
+}
+
+.hero-section .hero-content p {
+  width: 80%;
+}
+
+.hero-section .hero-image {
+  height: 100%;
+  width: 50%;
+  max-width: 700px;
+  background-image: url("../../assets/cut-hero.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.calorie-deficit-section {
+  width: 100%;
+  padding-top: 100px;
+}
+
+.calorie-deficit-section h2 {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.calorie-deficit-section h2 span {
+  color: var(--primary);
+}
+
+.calorie-deficit-section p {
+  margin-top: 50px;
+  width: 70%;
+}
+
+.calorie-deficit-section .cutting-moto {
+  margin-top: 80px;
+  background-color: #131313;
+  width: 100%;
+  border-left: solid 3px var(--primary);
+  padding: 30px 50px;
+  padding-top: 35px;
+}
+
+.calorie-deficit-section .cutting-moto h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.calorie-deficit-section .cutting-moto p {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.roadmap-section {
+  width: 100%;
+  padding-top: 80px;
+}
+
+.roadmap-section h2 span {
+  color: var(--primary);
+}
+
+.roadmap-section .py-5 {
+  padding-right: 150px;
+  padding-left: 15px;
+}
+
+.roadmap-section .py-5 .timeline-with-icons {
+  border-left: 1px solid var(--primary);
+  position: relative;
+  list-style: none;
+}
+
+.roadmap-section .py-5 .timeline-with-icons .timeline-item .timeline-icon {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.roadmap-section .py-5 .timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.roadmap-section .py-5 .timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.roadmap-section .py-5 .timeline-with-icons .timeline-icon {
+  position: absolute;
+  left: -48px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.diets-section {
+  width: 100%;
+}
+
+.diets-section h2 span {
+  color: var(--primary);
+}
+/*# sourceMappingURL=cut.css.map */
