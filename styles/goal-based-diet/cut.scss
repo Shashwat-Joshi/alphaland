@@ -259,28 +259,19 @@ nav {
                     width: 0%;
                     height: 100%;
                     transition: all .8s ease-in-out;
-                    .text {
-                        color: white;
-                        font-size: 20px;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        -webkit-transform: translate(-50%, -50%);
-                        -ms-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
-                        white-space: nowrap;
-                      }
                       .overlay-inner {
                         position: absolute;
-                        white-space: nowrap;
+                        overflow-wrap: break-word;
                         padding: 15% 10%;
                         height: 100%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
                         .meal-name {
+                            overflow-wrap: break-word;
                             display: flex;
                             flex-direction: row;
+                            padding-bottom: 20px;
                             img {
                                 height: 35px;
                                 width: 35px;
@@ -288,6 +279,7 @@ nav {
                             }
                             h2 {
                                 font-weight: 500;
+                                overflow-wrap: break-word;
                             }
                         }
                         .meal-macros {
@@ -306,7 +298,7 @@ nav {
                                 }
                                 h6 {
                                     font-size: 15px;
-                                    width: 60px;
+                                    width: 70px;
                                 }
                                 h6:last-child {
                                     margin-left: 60px;

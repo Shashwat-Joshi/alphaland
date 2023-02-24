@@ -319,20 +319,9 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
   transition: all .8s ease-in-out;
 }
 
-.diets-section .meals .diet-row .diet .overlay .text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-}
-
 .diets-section .meals .diet-row .diet .overlay .overlay-inner {
   position: absolute;
-  white-space: nowrap;
+  overflow-wrap: break-word;
   padding: 15% 10%;
   height: 100%;
   display: -webkit-box;
@@ -348,6 +337,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
 }
 
 .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-name {
+  overflow-wrap: break-word;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,6 +345,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding-bottom: 20px;
 }
 
 .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-name img {
@@ -365,6 +356,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
 
 .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-name h2 {
   font-weight: 500;
+  overflow-wrap: break-word;
 }
 
 .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros {
@@ -400,7 +392,7 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
 
 .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .carbs h6, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .protein h6, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .fat h6 {
   font-size: 15px;
-  width: 60px;
+  width: 70px;
 }
 
 .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .carbs h6:last-child, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .protein h6:last-child, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .fat h6:last-child {
