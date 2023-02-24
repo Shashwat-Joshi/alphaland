@@ -145,10 +145,22 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
   height: 100%;
   width: 50%;
   max-width: 700px;
-  background-image: url("../../assets/cut-hero.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.hero-section .cut-bg {
+  background-image: url("../../assets/cut-hero.png");
+}
+
+.hero-section .maintain-bg {
+  background-image: url("../../assets/maintain-hero.png");
+}
+
+.hero-section .bulk-bg {
+  background-position: 0px 0px;
+  background-image: url("../../assets/bulk-hero.png");
 }
 
 .calorie-deficit-section {
@@ -244,11 +256,322 @@ nav .container-fluid .collapse > .navbar-nav > .nav-item .nav-link:hover {
           justify-content: center;
 }
 
+#diets-hr {
+  background-color: var(--primary);
+  color: var(--primary);
+}
+
 .diets-section {
+  padding-top: 80px;
   width: 100%;
 }
 
 .diets-section h2 span {
   color: var(--primary);
+}
+
+.diets-section .meals {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.diets-section .meals .diet-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: calc(100vw / 3.5);
+  max-height: 400px;
+}
+
+.diets-section .meals .diet-row .diet {
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+  width: calc(100% / 4);
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.diets-section .meals .diet-row .diet .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.diets-section .meals .diet-row .diet .overlay .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner {
+  position: absolute;
+  white-space: nowrap;
+  padding: 15% 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-name img {
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-name h2 {
+  font-weight: 500;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .carbs, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .protein, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .fat {
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .carbs img, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .protein img, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .fat img {
+  height: 25px;
+  width: 25px;
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .carbs h6, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .protein h6, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .fat h6 {
+  font-size: 15px;
+  width: 60px;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .carbs h6:last-child, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .protein h6:last-child, .diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-macros .fat h6:last-child {
+  margin-left: 60px;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-cals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.diets-section .meals .diet-row .diet .overlay .overlay-inner .meal-cals img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+
+.diets-section .meals .diet-row .diet:hover > .overlay {
+  width: 100%;
+}
+
+.diets-section .meals .row-1 .one {
+  background-image: url("../../assets/diets/1.png");
+}
+
+.diets-section .meals .row-1 .two {
+  background-image: url("../../assets/diets/2.png");
+}
+
+.diets-section .meals .row-1 .three {
+  background-image: url("../../assets/diets/3.png");
+}
+
+.diets-section .meals .row-1 .four {
+  background-image: url("../../assets/diets/4.png");
+}
+
+.diets-section .meals .row-2 .one {
+  background-image: url("../../assets/diets/5.png");
+}
+
+.diets-section .meals .row-2 .two {
+  background-image: url("../../assets/diets/6.png");
+}
+
+.diets-section .meals .row-2 .three {
+  background-image: url("../../assets/diets/7.png");
+}
+
+.diets-section .meals .row-2 .four {
+  background-image: url("../../assets/diets/8.png");
+}
+
+.diets-section .meals .row-3 .one {
+  background-image: url("../../assets/diets/9.png");
+}
+
+.diets-section .meals .row-3 .two {
+  background-image: url("../../assets/diets/10.png");
+}
+
+.diets-section .meals .row-3 .three {
+  background-image: url("../../assets/diets/11.png");
+}
+
+.diets-section .meals .row-3 .four {
+  background-image: url("../../assets/diets/12.png");
+}
+
+.diets-section .meals .row-4 .one {
+  background-image: url("../../assets/diets/13.png");
+}
+
+.diets-section .meals .row-4 .two {
+  background-image: url("../../assets/diets/14.png");
+}
+
+.diets-section .meals .row-4 .three {
+  background-image: url("../../assets/diets/15.png");
+}
+
+.diets-section .meals .row-4 .four {
+  background-image: url("../../assets/diets/16.png");
+}
+
+/* FOOTER SECTION */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  background-color: #111111;
+}
+
+footer .footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+footer .footer-logo img {
+  height: 40px;
+  width: 40px;
+}
+
+footer .footer-logo p {
+  margin: 0;
+  margin-bottom: 2px;
+  margin-left: 10px;
+  padding: 0;
+  font-size: 21px;
+}
+
+footer .footer-logo p span {
+  color: var(--primary);
+}
+
+footer .footer-socials a > i {
+  font-size: 18px;
+}
+
+footer .footer-socials .fa {
+  background-color: transparent;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+
+footer .footer-socials .fa:hover {
+  color: var(--primary);
+}
+
+footer h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=cut.css.map */

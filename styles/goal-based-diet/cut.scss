@@ -116,10 +116,19 @@ nav {
         height: 100%;
         width: 50%;
         max-width: 700px;
-        background-image: url("../../assets/cut-hero.png");
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: cover;
+        background-size: cover; 
+    }
+    .cut-bg {
+        background-image: url("../../assets/cut-hero.png");
+    }
+    .maintain-bg {
+        background-image: url("../../assets/maintain-hero.png");
+    }
+    .bulk-bg {
+        background-position: 0px 0px;
+        background-image: url("../../assets/bulk-hero.png");
     }
 }
 
@@ -169,6 +178,7 @@ nav {
         padding-right: 150px;
         padding-left: 15px;
 
+
         .timeline-with-icons {
             border-left: 1px solid var(--primary);
             position: relative;
@@ -206,11 +216,233 @@ nav {
     }
 }
 
+#diets-hr {
+    background-color: var(--primary);
+    color: var(--primary);
+}
+
 .diets-section {
+    padding-top: 80px;
     width: 100%;
     h2 {
         span {
             color: var(--primary);
         }
     }
+    .meals {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        .diet-row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: calc(100vw / 3.5);
+            max-height: 400px;
+            .diet {
+                position: relative;
+                cursor: pointer;
+                height: 100%;
+                width: calc(100% / 4);
+                background-color: grey;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                .overlay {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    overflow: hidden;
+                    width: 0%;
+                    height: 100%;
+                    transition: all .8s ease-in-out;
+                    .text {
+                        color: white;
+                        font-size: 20px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        white-space: nowrap;
+                      }
+                      .overlay-inner {
+                        position: absolute;
+                        white-space: nowrap;
+                        padding: 15% 10%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        .meal-name {
+                            display: flex;
+                            flex-direction: row;
+                            img {
+                                height: 35px;
+                                width: 35px;
+                                margin-right: 10px;
+                            }
+                            h2 {
+                                font-weight: 500;
+                            }
+                        }
+                        .meal-macros {
+                            display: flex;
+                            flex-direction: column;
+                            .carbs, .protein, .fat {
+                                padding-bottom: 5px;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                img {
+                                    height: 25px;
+                                    width: 25px;
+                                    margin-bottom: 8px;
+                                    margin-right: 5px;
+                                }
+                                h6 {
+                                    font-size: 15px;
+                                    width: 60px;
+                                }
+                                h6:last-child {
+                                    margin-left: 60px;
+                                }
+                            }
+                        }
+                        .meal-cals {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            img {
+                                height: 50px;
+                                width: 50px;
+                                margin-bottom: 10px;
+                                margin-left: -10px;
+                            }
+                        }
+                      }
+                }
+            }
+            .diet:hover > .overlay {
+                width: 100%;
+            }
+        }
+        .row-1 {
+            .one {
+                background-image: url("../../assets/diets/1.png");
+            }
+            .two {
+                background-image: url("../../assets/diets/2.png");
+            }
+            .three {
+                background-image: url("../../assets/diets/3.png");
+            }
+            .four {
+                background-image: url("../../assets/diets/4.png");
+            }
+        }
+        .row-2 {
+            .one {
+                background-image: url("../../assets/diets/5.png");
+            }
+            .two {
+                background-image: url("../../assets/diets/6.png");
+            }
+            .three {
+                background-image: url("../../assets/diets/7.png");
+            }
+            .four {
+                background-image: url("../../assets/diets/8.png");
+            }
+        }
+        .row-3 {
+            .one {
+                background-image: url("../../assets/diets/9.png");
+            }
+            .two {
+                background-image: url("../../assets/diets/10.png");
+            }
+            .three {
+                background-image: url("../../assets/diets/11.png");
+            }
+            .four {
+                background-image: url("../../assets/diets/12.png");
+            }
+        }
+        .row-4 {
+            .one {
+                background-image: url("../../assets/diets/13.png");
+            }
+            .two {
+                background-image: url("../../assets/diets/14.png");
+            }
+            .three {
+                background-image: url("../../assets/diets/15.png");
+            }
+            .four {
+                background-image: url("../../assets/diets/16.png");
+            }
+        }
+    }
 }
+
+/* FOOTER SECTION */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #111111;
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        img {
+            height: 40px;
+            width: 40px;
+        }
+        p {
+            margin: 0;
+            margin-bottom: 2px;
+            margin-left: 10px;
+            padding: 0;
+            font-size: 21px;
+            span {
+                color: var(--primary);
+            }
+        }
+    }
+    .footer-socials {
+        a > i {
+            font-size: 18px;
+        }
+        .fa {
+            background-color: transparent;
+            padding: 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 5px;
+        }
+        
+        .fa:hover {
+            color: var(--primary);
+        }
+    }
+    h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
+
